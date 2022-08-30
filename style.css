@@ -216,3 +216,70 @@ hr {
     font-size: 15px;
     margin: 0 20px;
 }
+
+/* -------media query section------- */
+
+
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+    .section-content {
+        display: block;
+        margin-left: 200px;
+    }
+
+    .grid-section {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        margin-left: auto;
+    }
+}
+
+@media only screen and (max-width:767px) {
+    .section-content {
+        display: block;
+    }
+
+    .grid-section {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .banner {
+        width: 334px;
+        height: 472px;
+        background: #161616;
+        border-radius: 10px;
+        display: block;
+    }
+
+    .banner-content {
+        width: 258px;
+        height: 178px;
+    }
+
+    .main-title {
+        font-size: 18px;
+    }
+
+    .title-content {
+        margin: 0;
+        height: 25px;
+        width: 105px;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+
+    .banner-image .image {
+        height: 245px;
+        width: 233px;
+        margin: -33px 68px;
+    }
+
+    .half-width {
+        width: 100%;
+    }
+
+    .footer-content {
+        display: block;
+    }
+}
